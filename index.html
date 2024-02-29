@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Forum Romanum erleben!</title>
+		<link rel="stylesheet" href="css/forum.css">
+		<link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<script src="js/dw_mouseover.js"></script>
+	</head>
+
+	<body onLoad="MM_preloadImages('img/forum-uebersicht_vespasian.jpg')">
+		
+	
+		
+		<!--Header-->
+		
+				<header id="kopfbereich">
+				<div class="logo_und_text">
+					<div class="logo">
+						<a href="index.html" title="zur Startseite">
+						<img src="img/logo.png" width="50"  alt="">
+						</a>
+					</div>
+					<div class="header-text">
+						Forum Romanum<br>
+						Entdecke das alte Rom
+					</div>
+				</div>
+				<ul id="top_navigation">
+					<li><a href="index.html#ani1">Übersicht</a></li>
+					<li><a href="index.html#curia">Curia Iulia</a></li>
+					<li><a href="index.html#bogen">Triumphbogen</a></li>
+					<li><a href="#vesp">Tempel des Vespasian</a></li>
+					<li><a href="#saturn">Tempel des Saturn</a></li>
+					<li><a href="#tour">Virtuelle Tour</a></li><!---->
+					<li><a href="index.html#form">Kontakt</a></li>
+				</ul>
+					
+				<!-- Hamburger -->
+				<nav class="hamburger mobile-container">
+					<!-- Top Navigation Menu -->
+					<div class="topnav">
+						
+					  <a href="#top" class="active"><img src="img/logo.png" width="18"  alt=""></a><!---->
+					  <div id="myLinks">
+						<a href="index.html#ani1">Übersicht</a>
+						<a href="index.html#curia">Curia Iulia</a>
+						<a href="index.html#bogen">Triumphbogen</a>
+						<a href="#vesp">Tempel des Vespasian</a>
+						<a href="#saturn">Tempel des Saturn</a>
+						<a href="#tour">Virtuelle Tour</a><!---->
+						<a href="index.html#form">Kontakt</a>  
+					  </div>
+					  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					  </a>
+					</div>
+				</nav>
+			</header>
+
+			<!--SLIDER-->
+		<div id="slider" class="nivoSlider">
+			<img src="img/forum4kSlider.jpg"  alt="Test 01">
+			<img src="img/triumphbogen4kSlider.jpg"  alt="Test 02">
+			<img src="img/tempel4kSlider.jpg"  alt="Test 03" >				
+		</div><!---->
+
+			<!--Uebersicht Imagemap-->
+		<div class="uebersicht">
+			<h1 >Willkommen im Herzstück des antiken Roms – dem Forum Romanum!</h1><!---->
+			<p class="fade" >Tauchen Sie ein in die faszinierende Welt dieser historischen Stätte, die einst das pulsierende Zentrum des politischen, sozialen und wirtschaftlichen Lebens war.
+			</p>
+			
+			<video autoplay muted loop id="myVideo">
+			  <source src="video/PXL_20210914_112840187.mp4" type="video/mp4">
+			  Your browser does not support HTML5 video.
+			</video><!---->
+
+
+			<p >
+			Das Forum Romanum verkörpert die Essenz einer längst vergangenen Epoche, in der das Schicksal großer Zivilisationen auf dem Spiel stand.
+			<br> Als Ort politischer Intrigen, triumphaler Siege und bedeutender historischer Wendepunkte vermittelt das Forum Romanum den Besuchern einen einzigartigen Einblick in das Leben der Antike. 
+			</p>
+			<p id="ani1"  >
+			Hier, in diesem pulsierenden Zentrum, nahmen die Schicksalsfäden des Römischen Reiches ihren Lauf.
+			</p>
+			<h2 id="auswahlbild">Navigiere im Bild zu dem was dich interessiert!</h2>
+			<img  class="map" usemap="#imgmap" alt=""  src="img/forum-uebersicht.jpg" width="3840" height="1398" id="Image1">
+
+
+			<map name="imgmap"> 
+		        <area shape="rect" coords="290,120,720,980" href="#curia"
+					onMouseOut="MM_swapImgRestore()" 
+			  	onMouseOver="MM_swapImage('Image1','','img/forum-uebersicht_curia.jpg',1)" alt="">
+			
+				<area shape="rect" coords="830,640,1420,1250" href="#bogen"
+				onMouseOut="MM_swapImgRestore()" 
+			  	onMouseOver="MM_swapImage('Image1','','img/forum-uebersicht_bogen.jpg',1)" alt="">
+			
+				<area shape="rect" coords="1970,340,2330,1400" href="#vesp"
+				onMouseOut="MM_swapImgRestore()" 
+			  	onMouseOver="MM_swapImage('Image1','','img/forum-uebersicht_vespasian.jpg',1)" alt="">
+			
+				<area shape="rect" coords="2540,390,3020,1350" href="#saturn"
+					onMouseOut="MM_swapImgRestore()" 
+			  	onMouseOver="MM_swapImage('Image1','','img/forum-uebersicht_saturn.jpg',1)" alt="">
+			</map>
+
+		</div>
+		
+
+		<!--Martina-->
+		<div id="curia">
+			
+
+			<!--<img id="curia_bild_1" class="img_modal" alt="" src="img/senat.jpg">-->
+
+			
+			<a href="#modal-box1"><img alt="" id="curia_bild_1" src="img/senat.jpg"></a>
+
+			<div id="modal-box1">
+			<div class="inner-box">
+
+				<img alt="" class="img_senat1" src="img/senat.jpg">
+				<a href="#curia">schließen</a>
+			</div>
+			</div><!---->
+
+			
+			<h1>Curia Iulia</h1>
+			<p>
+			Neben der Basilica Aemilia war in der Curia der Senat von Rom untergebracht. Der Hauptbau ist vollständig erhalten, was seiner Nutzung als Kirche während des Mittelalters zu verdanken ist. Es handelt sich allerdings nicht um das ursprüngliche Gebäude, sondern um einen Wiederaufbau Diokletians aus dem Jahre 303 n. Chr.: Die Curia war 283 n. Chr. Bei einem Brand, der das ganze Viertel zwischen Caesar-Forum und Basilica Iulia zerstörte, niedergebrannt. Der Bau war von Caius Iulius Caesar errichtet worden (daher der Name Curia Iulia), als Ersatz für die 52 v. Chr. abgebrannte Curia Hostilia, und markierte einen wichtigen Einschnitt bei der Umgestaltung des nördlichen Endes des Forums, dem das republikanische Comitium zum Opfer fallen sollte. Geweiht wurde die neue Curia allerdings erst unter Augustus, Caesars Adoptivsohn und Erben, am 28. August 29 v. Chr., also immerhin 15 Jahre nach Caesars Tod.
+			</p>
+			<!--<img id="curia_bild_2" alt="" src="img/martina.jpg">-->
+
+			<a href="#modal-box2"><img id="curia_bild_2" alt="" src="img/martina.jpg"></a>
+
+			<div id="modal-box2">
+			<div class="inner-box">
+
+				<img alt="" class="img_senat2" src="img/martina.jpg">
+				<a href="#curia">schließen</a>
+			</div>
+			</div><!---->
+
+
+		</div>
+
+		<!--Triumphbogen-->
+		<div id="bogen">
+
+			<h1 id="bogen_headline">Septimius-Severus-Bogen</h1>
+			
+			<div class="parallax"></div>
+
+			<p>
+			Der Triumphbogen des Septimius Severus wurde zu Ehren des Kaisers und seiner Söhne Geta und Caracalla (ersterer wurde später von letzterem ermordet) im Jahr 203 n. Chr. errichtet, um an die Erfolge des Imperators im Osten gegen die Parther zu erinnern. Er ist vollständig mit Marmor verkleidet und mit einer Breite von 23,27 Metern, einer Höhe von 20,88 Metern und einer Tiefe von 11,20 Metern eines der größten derartigen Bauwerke der Antike. Zu den beiden seitlichen Durchgängen gelangte man über Stufen, durch den mittleren führte die Via Sacra, die hier ihren Anstieg zum Kapitol begann (Clivus Capitolinus).  An beiden Seiten des oberen Stockwerks ist eine Inschrift: angebracht.
+			</p>
+			<div id="inschrift" >
+			<p>"Dem Imperator Caesar Septimius Severus, dem Sohn des Marcus, dem Pius, Pertinax, Augustus, Vater des Vaterlandes, dem Besieger der Parther, der Araber und des parthischen Adiabene, dem Pontifex Maximus, der zum elften Mal Träger der Macht eines Tribuns, zum elften Mal zum Imperator ernannt, zum dritten Mal Konsul und Prokonsul ist; und dem Imperator Caesar Marcus Aurelianus Antoninus, Sohn des Lucius, dem Augustus, Pius, Felix, der zum sechsten Mal die Macht eines Tribunen hat, dem Konsul, Prokonsul, Vater des Vaterlandes; den besten und stärksten principes, für die Rettung des Staates und die Erweiterung des Herrschaftsbereichs des römischen Volkes und für ihre außerordentlichen Leistungen in der Heimat und in der Fremde. Der Senat und das Volk von Rom."
+			</p >
+			</div>
+				
+		</div>
+		
+			<!--Tempel Vespasian-->
+
+		<div id="vesp">
+			<img class="vesp_img_head" alt=""  src="img/tempel_grafik_alpha.png">
+			<h1 id="vesp_headline">Tempel des Vespasian</h1>
+      <div class="flex_vesp">
+        
+          <div class="text_vesp">
+              <p>
+                Neben dem Saturntempel befindet sich der kleinere Tempel des Vespasian und des Titus, der dem flavischen Kaiser Vespasian und seinem Sohn geweiht war. Er wurde unter Domitian fertig gestellt, der Nachfolger seines Bruders Titus war. Der 33 Meter lange und 22 Meter breite Tempel schließt so dicht an das Tabularium an, dass ein Eingang des Archives geschlossen werden musste. Von der Vorhalle sind noch drei korinthische, 15,20 Meter hohe Säulen erhalten, die erhaltenen Kapitelle und Friese zeigen noch den flavischen Stil.
+              </p>
+              <p>
+                Aus einer Inschrift, von der heute nur noch das Bruchstück restituert erhalten ist, die uns aber von einem Pilger aus dem 8. Jahrhundert überliefert ist, wissen wir, wem der Tempel geweiht war: dem vergöttlichten Vespasian vom Senat und dem Volk von Rom, restauriert von Septimius Severus und Caracalla.
+              </p>
+        </div>
+		  <div class="vesp_img">
+              <img  alt=""  src="img/tempel_alpha_vespersian_bearbeitet_schmal.png"><!---->
+           </div>
+      </div>
+			
+			
+			
+	  </div>
+		
+			<!--Tempel Saturn-->
+		<div id="saturn">
+			
+			<h1 id="saturn_headline">Tempel des Saturn</h1>
+			
+			<div class="flex_saturn">
+			<div class="saturn_img">
+			<img  alt=""  src="img/tempel_alpha_saturn_bearbeitet_schmal.png">
+			</div>
+			<div class="text_saturn">
+			<p>
+			Beherrscht wird der zum Forum hin gelegene Abhang des Kapitols von drei Tempeln, dessen größter der Tempel des Saturn ist. Seine Überreste dominieren noch heute die südwestliche Ecke des Forums: Ein gewaltiges Podium mit den noch aufrecht stehenden Säulen des Pronaos. Der Tempel hat eine lange Geschichte: Schon vor Errichtung eines Tempelgebäudes gab es an dieser Stelle einen Altar, und schon in der Königszeit wurde mit dem Bau des ersten Tempels begonnen. Die Weihung fand 498 v. Chr., also bereits in republikanischer Zeit, statt. Damit kann der Saturntempel nach dem Tempel des Iuppiter Capitolinus als zweitältester Tempel Roms gelten.
+			</p>
+			<p>
+			Was von dem Tempel heute noch zu sehen ist, geht wahrscheinlich auf eine Restaurierung nach einem Feuer 283 n. Chr. zurück. Bereits 42 v. Chr. hatte Munatius Plancus ihn vollständig wiederaufbauen lassen. Die Inschrift auf dem Architrav erinnert an diesen Wiederaufbau nach der Zerstörung durch den Brand durch Senat und Volk von Rom:
+			</p>
+			</div>
+			
+			</div>
+			<p class="roman">SENATUS POPULUSQUE ROMANUS INCENDIO CONSUMPTUM RESTITUIT</p>			
+			
+		</div>
+		
+		<!--Image-comparsion-->
+		<div class="flex_comp">
+        	<div class="comp1">
+              
+           	</div>
+          <div class="comp-container">
+			  <div class="comp-img">
+				<img src="img/schieberegler_bilder/Tempel-Saturn+Claudia-(org)-scaled_1400x1000.jpg" width="600" alt="">
+			  </div>
+			  <div class="comp-img img-comp-overlay">
+				<img src="img/schieberegler_bilder/Tempel-Saturn+Claudia-(rek)-scaled_1400x1000.jpg" width="600" alt="">
+			  </div>
+			</div>
+		  <div class="comp2">
+              
+           </div>
+      </div>
+		
+		<!--Virtuelle Tour-->
+		<div id="tour">
+		<h1 id="tour_headline">Mache eine virtuelle Tour!</h1>
+		
+ 		<iframe  src="https://360stories.com/rome/point/roman-forum-1" title="W3Schools Free Online Web Tutorials"></iframe> 
+		</div>
+		
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Nach oben</button>
+		
+		<!--FORMULAR-->
+		<h1 id="form">Noch weitere Fragen über das Forum Romanum?</h1>
+		<form method="post" action="#">
+		
+		
+			<section id="formular">
+				<select name="anrede">
+					<option>Frau</option>
+					<option>Herr</option>
+					<option>Divers</option>
+				</select>
+
+				<input name="vorname" type="text" placeholder="Vorname" maxlength="30">
+				<input name="nachname" type="text" placeholder="Nachname" maxlength="30">
+				<input name="email" type="email" placeholder="E-Mail-Adresse" maxlength="50" required>
+				<textarea class="kundentext" name="textarea" placeholder="Frage eingeben..."></textarea>
+				<input type="submit">
+				<input type="reset">
+
+			</section>
+
+		</form>
+		
+		<footer id="footer"><a href="#">Impressum</a> | <a href="#">AGB</a></footer>
+		
+		<script src="js/jquery.2.4.1.js"></script> <!--Bibliothek einbinden-->
+		<script src="js/jquery.nivo.slider.pack.js"></script> 
+		<script>
+				$(window).load(function() {
+					$('#slider').nivoSlider({
+						effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+						slices: 4, // For slice animations
+						boxCols: 8, // For box animations
+						boxRows: 4, // For box animations
+						animSpeed: 1000, // Slide transition speed
+						pauseTime: 5000, // How long each slide will show
+						startSlide: 0, // Set starting Slide (0 index)
+						directionNav: false, // Next & Prev navigation
+						controlNav: false, // 1,2,3... navigation
+						controlNavThumbs: false, // Use thumbnails for Control Nav
+						pauseOnHover: true, // Stop animation while hovering
+						manualAdvance: false, // Force manual transitions
+						prevText: 'Prev', // Prev directionNav text
+						nextText: 'Next', // Next directionNav text
+						randomStart: false, // Start on a random slide
+						beforeChange: function(){}, // Triggers before a slide transition
+						afterChange: function(){}, // Triggers after a slide transition
+						slideshowEnd: function(){}, // Triggers after all slides have been shown
+						lastSlide: function(){}, // Triggers when last slide is shown
+						afterLoad: function(){} // Triggers when slider has loaded
+					});
+				});
+			</script>
+		
+		<!--Skripte für ImageMap-->
+		<script src="js/jquery.rwdImageMaps.js"></script> <!--Methode einbinden-->
+		<script>
+				$(document).ready(function(e) {
+				$('img[usemap]').rwdImageMaps();
+				}); 
+		</script><!--Methode anwenden auf Dokument-->
+		
+		<!--Skript für Hamburger Menu-->
+		<script>
+			$(document).ready(function() {
+				$('#top_navigation').onePageNav();
+			});
+		</script>
+		<script>
+		function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		</script>
+		
+		<!--Skript für Video
+		<script>
+		var video = document.getElementById("myVideo");
+		var btn = document.getElementById("myBtn");
+
+		function myFunction() {
+		  if (video.paused) {
+			video.play();
+			btn.innerHTML = "Pause";
+		  } else {
+			video.pause();
+			btn.innerHTML = "Play";
+		  }
+		}
+		</script>-->
+		
+		<!--Fuegt das skript fuer den Bildvergleich hinzu-->
+		<script>
+			function initComparisons() {
+		  var x, i;
+		  /* Find all elements with an "overlay" class: */
+		  x = document.getElementsByClassName("img-comp-overlay");
+		  for (i = 0; i < x.length; i++) {
+			/* Once for each "overlay" element:
+			pass the "overlay" element as a parameter when executing the compareImages function: */
+			compareImages(x[i]);
+		  }
+		  function compareImages(img) {
+			var slider, img, clicked = 0, w, h;
+			/* Get the width and height of the img element */
+			w = img.offsetWidth;
+			h = img.offsetHeight;
+			/* Set the width of the img element to 50%: */
+			img.style.width = (w / 2) + "px";
+			/* Create slider: */
+			slider = document.createElement("DIV");
+			slider.setAttribute("class", "img-comp-slider");
+			/* Insert slider */
+			img.parentElement.insertBefore(slider, img);
+			/* Position the slider in the middle: */
+			slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+			slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+			/* Execute a function when the mouse button is pressed: */
+			slider.addEventListener("mousedown", slideReady);
+			/* And another function when the mouse button is released: */
+			window.addEventListener("mouseup", slideFinish);
+			/* Or touched (for touch screens: */
+			slider.addEventListener("touchstart", slideReady);
+			 /* And released (for touch screens: */
+			window.addEventListener("touchend", slideFinish);
+			function slideReady(e) {
+			  /* Prevent any other actions that may occur when moving over the image: */
+			  e.preventDefault();
+			  /* The slider is now clicked and ready to move: */
+			  clicked = 1;
+			  /* Execute a function when the slider is moved: */
+			  window.addEventListener("mousemove", slideMove);
+			  window.addEventListener("touchmove", slideMove);
+			}
+			function slideFinish() {
+			  /* The slider is no longer clicked: */
+			  clicked = 0;
+			}
+			function slideMove(e) {
+			  var pos;
+			  /* If the slider is no longer clicked, exit this function: */
+			  if (clicked == 0) return false;
+			  /* Get the cursor's x position: */
+			  pos = getCursorPos(e)
+			  /* Prevent the slider from being positioned outside the image: */
+			  if (pos < 0) pos = 0;
+			  if (pos > w) pos = w;
+			  /* Execute a function that will resize the overlay image according to the cursor: */
+			  slide(pos);
+			}
+			function getCursorPos(e) {
+			  var a, x = 0;
+			  e = (e.changedTouches) ? e.changedTouches[0] : e;
+			  /* Get the x positions of the image: */
+			  a = img.getBoundingClientRect();
+			  /* Calculate the cursor's x coordinate, relative to the image: */
+			  x = e.pageX - a.left;
+			  /* Consider any page scrolling: */
+			  x = x - window.pageXOffset;
+			  return x;
+			}
+			function slide(x) {
+			  /* Resize the image: */
+			  img.style.width = x + "px";
+			  /* Position the slider: */
+			  slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+			}
+		  }
+		} 
+		</script>
+		 <script>
+			 initComparisons();
+		</script>
+		
+		<!--Fade in effekt-->
+		<script>
+			$(window).scroll(function(){
+				$(".fade").css("opacity", 0 + $(window).scrollTop() / 250);
+			});
+		
+		</script>
+		
+		<!--button back to top-->
+		<script>
+				// Get the button:
+		let mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+		</script>
+	</body>
+</html>

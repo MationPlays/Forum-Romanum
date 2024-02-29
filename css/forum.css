@@ -1,0 +1,694 @@
+@charset "utf-8";
+/* CSS Document für die Standard Elemente der Forum Romanum Seite*/
+
+*{box-sizing: border-box;}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+color: #fff;
+background-image: url("../img/pattern-background_orange_versetzt_03.png");
+background-size: 8rem;
+margin: 0;
+
+}
+
+h1{text-align: center;}
+
+/*Header*/
+
+
+
+/*Hamburger Menue*/
+#kopfbereich{background-color:#c68066;
+	display: flex;/**/
+	align-items: center;
+	position: fixed;
+	top:0;
+	z-index: 1000;
+	width:100%;
+}
+
+.logo{
+	display: inline-block;
+	background-color: #c68066;
+	padding: 0.4rem;
+	width: 4rem;
+	height: 4rem;/**/
+}
+
+.header-text{display: inline-block;
+	background-color: #c68066;
+	line-height: 2rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+width: 70%;
+height: 3.5rem;}
+
+.logo_und_text{
+	display:block;
+background-color: #c68066;
+	width: 17rem;
+	height: 4rem;
+}
+
+#top_navigation {
+
+background-color: #c68066;
+width: 80%;
+height: 10%;
+padding-left: 0;
+padding: 0.3rem;	
+display: flex;
+justify-content: space-between;/**/
+list-style-type: none;
+}
+
+#top_navigation li{background-color: #c68066;
+width: 20%;	
+padding: 0.3rem;/**/}
+
+#top_navigation a {
+background-color: #c68066;
+color: #fff;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;/**/
+display: block;	
+padding: 0.3rem;
+
+}
+
+#top_navigation a:hover {
+background-color: #c86541;
+}
+
+
+
+.hamburger{background-color: #c68066;
+	display:none;
+	position:fixed;
+	top:0;
+	right:0;
+	z-index: 1000;
+	width: 100%;
+}
+
+.mobile-container {
+  margin: auto;
+  background-color: #c68066;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+	display:block;
+  overflow: hidden;
+  background-color: #c68066;
+  position: relative;
+	width:100%;
+	z-index: 500;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #c68066;
+  
+
+}
+
+
+
+
+/*Slider*/
+#slider{max-height: 1000px;
+margin:0;}
+
+/*Video*/
+#myVideo {
+/*  position: fixed;
+  right: 0;
+  bottom: 0;*/
+  min-width: 100%; 
+  min-height: 100%;
+  /*width: 100%; 
+  height: 100%;*/
+}
+
+.content {
+/*  position: fixed;
+  bottom: 0;*/
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+/*Animation text*/
+#ani1{
+    		animation-name: ani1;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+}
+
+@keyframes ani1 {
+				0%   {scale: 1.0}
+				12.5%{scale: 1.01}
+				25%  {scale: 1.02}
+				45%	 {scale: 1.025}
+				50%  {scale: 1.02}
+				75%  {scale: 1.015}
+				100% {scale: 1.01}
+			}
+	
+.puls{}
+
+
+/*Uebersicht*/
+
+.uebersicht{background-image: url("");}
+.uebersicht h1,h2{text-align: center;
+}
+
+.uebersicht img{width: 100%;
+height: auto;}
+
+.uebersicht p{font-size: 1.5rem;
+	background-color: #c68066; 
+	border-radius: 1rem;
+	width: 50%;
+text-align: center;
+margin:auto;
+margin-top: 4rem;
+margin-bottom: 4rem;
+
+}
+
+
+
+/*Inhaltsseiten*/
+
+/*Modal*/
+
+#modal-box1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.80);
+    color: white;
+	z-index: 1000;
+}
+
+#modal-box1:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-box2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.80);
+    color: white;
+	z-index: 1000;
+}
+
+#modal-box2:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-box {
+    max-width: 100%;
+    width: 800px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.inner-box h2 { 
+    margin: 0;
+    padding: 20px;
+    background-color: green;
+    border-radius: 25px 25px 0 0;
+}
+
+.inner-box p {
+    padding: 20px;
+    min-height: 100px;
+}
+
+.inner-box a {
+    padding: 10px;
+    display: block;
+    background-color: #c68066;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.img_senat1{width:100%;}
+
+.img_senat2{width:100%;}
+
+/*Seite Curia*/
+
+
+#curia{
+}
+
+
+
+
+
+#curia p{
+	font-size: 1.5rem;
+	background-color: #c68066;
+	width: 70%;
+	padding: 1rem;
+	border-radius: 2rem;
+	margin: auto;
+
+	
+}
+
+
+
+#curia_bild_1{
+/**/position: relative;
+	bottom: -6.5rem;
+	border-radius: 2rem;
+	margin-left: 12%;
+	width: 20%;
+	animation: textwelle 6s;
+
+}
+
+#curia_bild_2{
+	position: relative;
+	top: -3rem;/**/
+	border-radius: 2rem;
+	margin-left: 70%;
+	margin-top: 1rem;
+	width: 20%;
+	animation: textwelle 6s;
+
+	
+}
+
+/*Seite Triumphbogen*/
+
+.parallax {
+  /* The image used */
+	
+  background-image: url("../img/bogen-inschrift-scaled.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+margin-bottom: 2rem;
+}
+
+#bogen{
+padding: 10px;
+
+}
+
+#bogen p{
+	font-size: 1.5rem;
+	background-color: #c68066;
+	width: 70%;
+	padding: 1rem;
+	border-radius: 2rem;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+
+#bogen #bogen_headline{
+text-align: center;
+padding-top: 6rem;
+padding-bottom: 6rem;
+padding-right: 6rem;
+padding-left: 6rem;
+border-radius: 2rem;
+}
+
+
+#bogen #inschrift{background-image: url("../img/triumphbogen_farbverlauf.jpg");
+background-size: cover;
+background-position: top right;
+background-repeat: no-repeat;
+min-height: 60rem;
+	
+	font-size: 1.5rem;
+	background-color: #c68066;
+	width: 70%;
+	padding: 1rem;
+	border-radius: 2rem;
+	margin: auto;
+	margin-bottom: 1rem;
+
+}
+
+#inschrift p{
+	background-color:rgba(241,241,241,0.00);
+	opacity: 0;
+}
+
+#inschrift p:hover{
+	animation: texteinblenden 6s;
+}
+
+
+/*Seite Vespasian*/
+
+#vesp{
+display: block;
+padding: 10px;
+
+}
+
+#vesp p{
+	font-size: 1.5rem;
+	background-color: #c68066;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 2rem;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+
+#vesp #vesp_headline{
+text-align: center;
+
+}
+
+.vesp_img_head{display:block;
+	width:15%;
+	margin:auto;
+	margin-top: 3rem;}
+
+
+.vesp_img{
+	background-color: rgba(207,51,54,0.00);
+	width: 20%;
+	
+
+}
+
+.flex_vesp{
+	background-color: rgba(251,255,0,0.00);
+	display:flex;
+}
+
+.text_vesp{
+	margin-left: 15%;
+}
+
+/*Seite Saturn*/
+
+#saturn{
+padding: 10px;
+
+}
+
+#saturn p{
+	font-size: 1.5rem;
+	background-color: #c68066;
+	width: 70%;
+	padding: 1rem;
+	border-radius: 2rem;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+
+#saturn_headline{
+text-align: center;
+	margin-top: 6rem;
+
+}
+
+
+.saturn_img{
+	background-color: rgba(207,51,54,0.00);
+	/*float: right;*/
+	width: 20%;
+
+}
+
+
+.flex_saturn{
+	background-color: rgba(251,255,0,0.00);
+	display:flex;
+}
+
+.roman{font-family: times new Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";}
+
+/*Bild Vergleich*/
+
+.img-comp-container {
+
+  height: 600px; /*should be the same height as the images*/
+	
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.flex_comp{	background-color: rgba(251,255,0,0.00);
+	display:flex;
+	align-items:center;}
+
+.comp1{	background-color: rgba(207,51,54,0.00);
+	/*float: right;*/
+	width: 20%;}
+
+.comp2{	background-color: rgba(207,51,54,0.00);
+	/*float: right;*/
+	width: 20%;}
+
+.comp-container {
+	width:20%;
+	margin-left: 10%;
+  position: relative;
+  height: 600px; /*should be the same height as the images*/
+}
+
+.comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+/*Virtuelle Tour*/
+
+#tour{
+	
+}
+#tour_headline{
+	margin-top: 8rem
+}
+
+iframe{display: block;
+height: 800px;
+width:80%;
+margin: auto;}
+
+/*Formular*/
+#formular{}
+
+
+section{ background-color:#c68066;
+	border-radius: 1rem;
+	width:25%;
+	padding: 1rem;
+	margin-left: 37.5%;
+	
+}
+
+
+form {
+	font-size: 2rem;
+	padding:10px;
+	margin-bottom: 10rem;
+}
+
+
+
+textarea{display: block;
+width: 80%;
+height: 300px;
+margin: 1rem;}
+
+.kundentext{
+	resize: none;
+}
+
+textarea, input, select{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 1rem;
+}
+/*Footer*/
+#footer{background-color: #c86541;
+	padding: 1rem;
+	text-align: center;
+}
+
+#footer a{color: #fff;
+
+text-decoration: none;}
+
+/*BACK TO TOP BUTTON*/
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #c68066; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*Methoden*/
+
+@keyframes textwelle {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }  
+  
+  100% {
+    transform: scale(1);
+    opacity: 1;	
+  }
+}
+
+@keyframes texteinblenden {
+  0% {
+    opacity: 0;
+  }  
+  
+  100% {
+    opacity: 1;	
+  }
+}
+/* ***************** Inhalts Formate ********************** */
+
+
+
+
+@media (max-width:105rem){
+	#kopfbereich{justify-content: space-between;}
+	#top_navigation{display: none;}
+	.hamburger{display: block;}
+	.logo, .header-text, .logo_und_text{display:none;}
+	
+}
